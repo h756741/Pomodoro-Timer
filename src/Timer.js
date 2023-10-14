@@ -56,7 +56,7 @@ function Timer() {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [settingsInfo]);
+    }, [initTimer, switchMode, settingsInfo]);
 
     const totalSeconds = mode === 'work' 
     ? settingsInfo.workMinutes * 60 
